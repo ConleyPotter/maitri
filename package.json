@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ConleyPotter/maitri/issues"
   },
-  "homepage": "https://github.com/ConleyPotter/maitri#readme"
+  "homepage": "https://github.com/ConleyPotter/maitri#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.8"
+  }
 }
