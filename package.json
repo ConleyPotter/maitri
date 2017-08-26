@@ -1,0 +1,19 @@
+{
+  "name": "maitri",
+  "version": "1.0.0",
+  "description": "This will be the website where my mother can display, sell, and advertise her artwork",
+  "main": "app.js",
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConleyPotter/maitri.git"
+  },
+  "author": "Conley Potter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConleyPotter/maitri/issues"
+  },
+  "homepage": "https://github.com/ConleyPotter/maitri#readme"
+}
