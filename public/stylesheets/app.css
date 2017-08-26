@@ -1,0 +1,13 @@
+i.icon {
+	font-size: 2em;
+}
+
+#title {
+	margin-top: 7em;
+}
+
+#static_home {
+	background-image: url(https://source.unsplash.com/P103bmFilDA);
+	background-size: cover;
+  background-position: center center;
+}

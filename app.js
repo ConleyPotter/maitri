@@ -13,18 +13,19 @@ var listingSchema = new mongoose.Schema({
 	title: String,
 	image: String,
 	description: String,
-	price: String,
+	price: Number,
+	likes: Number,
 	created: {type: Date, default: Date.now()}
 });
 
 // Mongoose/model config
-var Listing = mongoose.model("Blog", blogSchema);
+var Listing = mongoose.model("Listing", listingSchema);
 
 // RESTFUL Routes
 
 // ROOT ROUTE
 app.get("/", function(req, res) {
-	res.render("static_home");
+	res.render("static_pages/static_home");
 })
 
 // INDEX ROUTE
