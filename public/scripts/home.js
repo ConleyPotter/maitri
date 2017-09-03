@@ -1,0 +1,1 @@
+$(".fill").parent().addClass("static_home");

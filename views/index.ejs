@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>Welcome to the Maitri Shop</h1>
+			<p>
+				Shop for your next piece of wall-art, the perfect center piece for your garden, or simply a beautiful hand-crafted creation by Tara Potter.
+			</p>
+			<p>
+				<a href="/listings/new"><button class="btn btn-primary btn-lg">Add New Listing</button></a>
+			</p>
+		</div>
+	</header>
+	
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h3>Tara's Most Popular Pieces:</h3>
+		</div>
+	</div>
+
+	<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+		<% listings.forEach(function(listing) { %>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="<%= listing.image %>">
+						<div class="caption"><h4><%= listing.title %></h4></div>
+						<p>
+							<a href="/listings/<%= listing._id %>" class="btn btn-primary">More info</a>
+						</p>
+					</div>
+				</div>
+		<% }) %>
+	</div> <!-- for the row -->
+</div> <!-- for the container  -->
+
+
+<% include partials/footer %>
